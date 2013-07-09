@@ -5,7 +5,8 @@
         <meta name="language" content="en" />
         <meta name="robots" content="noindex, follow" />
         <title>Type Those Tweets</title>
-        <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <script src="js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+
         <script type="text/javascript" src="js/jquery.aciTypewriter.js"></script>
 
         <style type="text/css">
@@ -114,8 +115,8 @@
                 // simple typewriter
 
                 $('#block1').aciTypewriter({
-                    autoInit: false, // or true to auto-init typewriter
-                    autoStart: false, // or true to auto-start typewriter
+                    autoInit: true, // or true to auto-init typewriter
+                    autoStart: true, // or true to auto-start typewriter
                     callbacks: {
                         beforeInit: function(object){
                             //alert('before init: ' + object.attr('id'));
@@ -132,10 +133,6 @@
                     }
                 });
 
-                // manual init because 'autoInit' was false
-                $('#block1').aciTypewriter('init');
-                // manual start because 'autoStart' was false
-                $('#block1').aciTypewriter('start');
 
                 // stop block1 after 4s and resume after 10s
 
@@ -143,8 +140,8 @@
                     $('#block1').aciTypewriter('pause');
                     window.setTimeout(function(){
                         $('#block1').aciTypewriter('resume');
-                    }, 10000);
-                }, 200);
+                    }, 10);
+                }, 20);
 
                 // link the two next blocks together (block2 & block3)
                 // first will have a longer text delay and the second will be faster

@@ -4,7 +4,7 @@ function transform_tweet(json_tweet) {
 
 var pollstate = 0;
 var poll_wait = 3000;
-var last_id_str = null;
+var last_id_str = 354424012400635904;
 
 function render(tweets) {
   // tweets array is from older to most recent
@@ -22,7 +22,7 @@ function periodic_poll() {
   if (pollstate === 0) {
     pollstate = 1;
 
-    since_id = "";
+    since_id = "354424012400635904";
     if (last_id_str) {
       since_id = 'since_id=' + last_id_str + '&';
     }
@@ -30,7 +30,6 @@ function periodic_poll() {
 
     // var fetch = $.getJSON('http://localhost:3000/api/v1/timeline/artupfest?callback=?');
     var fetch = $.getJSON('http://ec2-54-225-55-169.compute-1.amazonaws.com/api/v1/timeline/artupfest.json?author=artupfest&order=asc&' + since_id + 'callback=?');
-
 
 
     fetch.fail(function(error) {

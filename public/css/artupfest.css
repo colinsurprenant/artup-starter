@@ -1,7 +1,5 @@
    
         html {
-            height: 300%;
-            overflow: hidden; 
             }
 
 
@@ -25,7 +23,8 @@
             .width {
                 width:100%;
                 font-size:36px;
-                color: #ff00ff;
+                /* color: #ff00ff; */
+                color: #CCC;
             }
 
             .reset {
