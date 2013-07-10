@@ -58,7 +58,7 @@ function poll_api() {
     since_id = 'since_id=' + last_id_str + '&';
   }
 
-  var fetch = $.getJSON('http://localhost:3000/api/v1/timeline/artupfest?author=artupfest&order=asc&' + since_id + 'callback=?');
+  var fetch = $.getJSON('http://ec2-54-225-55-169.compute-1.amazonaws.com/api/v1/timeline/artupfest?author=artupfest&order=asc&' + since_id + 'callback=?');
   // var fetch = $.getJSON('http://ec2-54-225-55-169.compute-1.amazonaws.com/api/v1/timeline/scarle.json?author=scarle&order=asc&' + since_id + 'callback=?');
 
   fetch.fail(function(error) {
