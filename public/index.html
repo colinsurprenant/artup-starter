@@ -5,8 +5,8 @@
 
   <script src="js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/tweets.js" type="text/javascript" charset="utf-8"></script>
-  <script type="text/javascript" src="js/jquery.aciTypewriter.js"></script>
-
+  <script src="js/jquery.aciTypewriter.js" type="text/javascript" charset="utf-8"></script>
+  <link href='http://fonts.googleapis.com/css?family=Denk+One' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/artupfest.css"/>
 
 </head>
@@ -15,93 +15,9 @@
   <a class="logo" href="http://startupfestival.com/en/" title="International Startup Festival - July 10-13, 2013 | Montreal" target="_blank" style="padding-bottom:20px;" align="right"><img src="http://startupfestival.com/en/wp-content/uploads/2012/11/logo-2013.png" alt="International Startup Festival - July 10-13, 2013 | Montreal" width="126" height="159" align="right"></a>
   <h1><a href="http://startupfestival.com/en/" title="International Startup Festival - July 10-13, 2013 | Montreal" target="_blank" style="font-size:48px;" >Artupfest</a></h1>
 
-  <div id="tweets-container" class="width"></div>
+  <div id="tweets-container" class="artuptweets"></div>
+  <br/><br/>
 
-  <script language="javascript" type="text/javascript">
-
-    $(document).ready(function(){
-        // simple typewriter
-
-        $('#tweets-container').aciTypewriter({
-            autoInit: false, // or true to auto-init typewriter
-            autoStart: false, // or true to auto-start typewriter
-            textDelay: 200,
-            callbacks: {
-                beforeInit: function(object){
-                    //alert('before init: ' + object.attr('id'));
-                },
-                afterInit: function(object){
-                    //alert('after init: ' + object.attr('id'));
-                },
-                beforeStart: function(object){
-                    //alert('before start: ' + object.attr('id'));
-                },
-                afterFinish: function(object){
-                    //alert('after finish: ' + object.attr('id'));
-                }
-            }
-        });
-
-        // manual init because 'autoInit' was false
-        $('#tweets-container').aciTypewriter('init');
-        // manual start because 'autoStart' was false
-        $('#tweets-container').aciTypewriter('start');
-
-        // stop block1 after 4s and resume after 10s
-
-        window.setTimeout(function(){
-            $('#tweets-container').aciTypewriter('pause');
-            window.setTimeout(function(){
-                $('#tweets-container').aciTypewriter('resume');
-            }, 10000);
-        }, 200);
-
-
-        // link the two next blocks together (block2 & block3)
-        // first will have a longer text delay and the second will be faster
-
-        $('#block3').aciTypewriter({
-            textDelay: 200,
-            autoStart: false
-        });
-
-        $('#block2').aciTypewriter({
-            textDelay: 200,
-            autoStart: true,
-            callbacks: {
-                afterFinish: function(object){
-                    // at the end, start block3
-                    $('#block3').aciTypewriter('start');
-                }
-            }
-        });
-
-        // stop block2 after 2s and resume after 3s
-
-        window.setTimeout(function(){
-            $('#block2').aciTypewriter('pause');
-            window.setTimeout(function(){
-                $('#block2').aciTypewriter('resume');
-            }, 3000);
-        }, 2000);
-
-        // play with the table :)
-
-        $('#table').click(function(){
-            $('table').aciTypewriter('destroy').aciTypewriter({autoStart:true});
-            return false;
-        });
-
-        // play with the entire document :))
-
-        $('#body').click(function(){
-            $('body').aciTypewriter('destroy').aciTypewriter({autoStart:true});
-            return false;
-        });
-
-    });
-
-</script>
 
 
 </body>

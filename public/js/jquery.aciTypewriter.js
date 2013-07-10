@@ -36,7 +36,8 @@
         // need to work with .parents() (see :first added here)
         objects: 'img,br',                              // object selector: elements that you want to be hidden if the text before them it's not visible yet
         effects: true,                                  // use fadeIn effect? (the delay valus will be used as effect duration)
-        textDelay: 10,                                  // delay until next piece of text is show
+        // textDelay: 100,                                 // delay until next piece of text is show
+        textDelay: 1,                 // fast value!
         fixDelay: true,                                 // if false and 'words' is true: the delay is computed based on word length
         compoundDelay: 50,                              // delay to show parent elements when the first piece of child text becomes visible
         // note: can add visible artefacts until becomes visible because the child also have running animation effects

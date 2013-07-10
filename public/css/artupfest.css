@@ -8,8 +8,9 @@
                 padding:50px;
                 color: #FFF;
                 background-color: #333;
-                font-family: 'DaxCompactBoldRegular', Helvetica, sans-serif;
+                font-family: 'Denk One', sans-serif;
                 line-height: 3em;
+                /* background-image: url('../images/bg-pattern.jpg'); */
 
             }
             
@@ -20,11 +21,12 @@
 
             
             
-            .width {
+            .artuptweets {
                 width:100%;
                 font-size:36px;
                 /* color: #ff00ff; */
                 color: #CCC;
+
             }
 
             .reset {
@@ -38,39 +40,3 @@
             }
             
             
-
-@font-face {
-    font-family: 'DaxCompactBoldRegular';
-    src: url('http://startupfestival.com/en/wp-content/themes/startupfest/fonts/daxcompact-bold-webfont.eot');
-    src: url('http://startupfestival.com/en/wp-content/themes/startupfest/fonts/daxcompact-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('http://startupfestival.com/en/wp-content/themes/startupfest/fonts/daxcompact-bold-webfont.woff') format('woff'),
-         url('http://startupfestival.com/en/wp-content/themes/startupfest/fonts/daxcompact-bold-webfont.ttf') format('truetype'),
-         url('http://startupfestival.com/en/wp-content/themes/startupfest/fonts/daxcompact-bold-webfont.svg#DaxCompactBoldRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'CaeciliaLTStd45Light';
-    src: url('http://startupfestival.com/en/wp-content/themes/startupfest/fonts/caecilialtstd-light-webfont.eot');
-    src: url('http://startupfestival.com/en/wp-content/themes/startupfest/fonts/caecilialtstd-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('http://startupfestival.com/en/wp-content/themes/startupfest/fonts/caecilialtstd-light-webfont.woff') format('woff'),
-         url('http://startupfestival.com/en/wp-content/themes/startupfest/fonts/caecilialtstd-light-webfont.ttf') format('truetype'),
-         url('http://startupfestival.com/en/wp-content/themes/startupfest/fonts/caecilialtstd-light-webfont.svg#CaeciliaLTStd45Light') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'CaeciliaLTStd55Roman';
-    src: url('http://startupfestival.com/en/wp-content/themes/startupfest/fonts/caecilialtstd-roman-webfont.eot');
-    src: url('http://startupfestival.com/en/wp-content/themes/startupfest/fonts/caecilialtstd-roman-webfont.eot?#iefix') format('embedded-opentype'),
-         url('http://startupfestival.com/en/wp-content/themes/startupfest/fonts/caecilialtstd-roman-webfont.woff') format('woff'),
-         url('http://startupfestival.com/en/wp-content/themes/startupfest/fonts/caecilialtstd-roman-webfont.ttf') format('truetype'),
-         url('http://startupfestival.com/en/wp-content/themes/startupfest/fonts/caecilialtstd-roman-webfont.svg#CaeciliaLTStd55Roman') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
